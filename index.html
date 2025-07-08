@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+	@font-face{
+	 font-family:Inter;
+	 src:url('assets/font/static/Inter-Bold.ttf');
+	}
+	* {
+    	 box-sizing: border-box;
+	 font-family: Inter;
+	}
+	body , html{
+	 margin: 0;
+    	 padding: 0;
+   	 direction: rtl;
+	 font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  	 background-color: #0f0f0f;
+	 color: #eee;
+   	 height: 100vh;
+   	 display: flex;
+   	 align-items: center;
+   	 justify-content: center;
+	}
+	.card{
+	 background-color: #1f1f1f;
+	 width: 320px;
+    	 border-radius: 10px;
+	 box-shadow: 0 0 20px rgba(255 255 255 / 0.05);
+    	 padding: 2rem 2rem 3rem;
+    	 text-align: center;
+	 
+	}
+	.ax img{
+	 width: 90px;
+    	 height: 90px;
+	 object-fit: cover;
+	 display: block;
+	 border-radius: 50%;
+	 overflow: hidden;
+	 margin: 0 auto 1rem;
+	 border: 2.5px solid #333333;
+	}
+	.name{
+	 font-size: 1.25rem;
+   	 font-weight: 400;
+   	 margin-bottom: 0.35rem;
+	}
+	.loc{
+	 font-size: 0.9rem;
+   	 color: #b6cf26;
+	 font-weight: 600;
+   	 margin-bottom: 1rem;
+	}
+	.description{
+	 font-style: italic;
+    	 font-size: 0.95rem;
+    	 color: #bbb;
+    	 margin-bottom: 1.8rem;
+	 font-weight: 700;
+	}
+	.button{
+	 display: flex;
+	 flex-direction: column;
+	 gap: 0.75rem;
+	}
+	.btn{
+	 background-color: #2a2a2a;
+    	 border: none;
+   	 padding: 0.8rem 0;
+	 border-radius: 6px;
+   	 color: #ddd;
+   	 font-weight: 600;
+	 cursor: pointer;
+    	 transition: background-color 0.3s ease;
+         box-shadow: 0 0 0 rgba(0,0,0,0);
+	}
+	.btn:hover,
+  	.btn:focus {
+    	 background-color: #444444;
+   	 outline: none;
+  	}
+  </style>
+</head>
+<body>
+	<section class="card">
+	<div class="ax">
+		<img src="assets/images/avatar-jessica.jpeg" alt="image jessica">
+	</div>
+	<h1 class="name">Jessica Randall</h1>
+	<p class="loc">London, United Kingdom</p>
+	<p class="description" >"Front-end developer and avid reader."</p>
+	<div class="button">
+		<button type="button" class="btn">GitHub</button>
+		<button type="button" class="btn">Frontend Mentor</button>
+		<button type="button" class="btn">LinkedIn</button>
+		<button type="button" class="btn">Twitter</button>
+		<button type="button" class="btn">Instagram</button>
+  	</div>
+	</section>
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+</body>
+</html>
